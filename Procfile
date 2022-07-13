@@ -1,1 +1,1 @@
-web:gunicorn paradime.wsgi
+web: gunicorn paradime.wsgi --log-file -
