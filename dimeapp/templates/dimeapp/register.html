@@ -1,0 +1,58 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/register.css' %}" rel="stylesheet" />
+    <link rel="shortcut icon" href="{% static 'images/paradimeicon.ico' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Paradime</title>
+</head>
+<body>
+
+    <form class="form-container" method="POST" action="" autocomplete="off">
+        {% csrf_token %}
+        <label for="" class="label-head">Welcome, to Paradime!</label>
+    
+        <div class="InputBox">
+            <input type="text" required="required" name="username" id="id_username" autocomplete="off">
+            <span>Username</span>    
+        </div>
+        <div class="InputBox">
+            <input type="text" required="required" name="email" id="id_email"  autocomplete="off">
+            <span>Email</span>
+        </div>
+
+        <div class="pass-container">   
+            <div class="InputBox">
+                <input type="password" required="required" name="password1" id="id_password1" autocomplete="off">
+                <span>Password</span>    
+            </div>
+            <div class="InputBox">
+                <input type="password" required="required" name="password2" id="id_password2"  autocomplete="off">
+                <span>Confirm Password</span>
+            </div>
+        </div>
+    
+        
+        <span class="buttons">
+            <a href="{% url 'login' %}" class="login-link">Login</a>
+            <input type="submit" name="" value="Register" class="signup-btn" />
+        </span>
+        
+        <ul>
+            {% for key, value in form.errors.items %}
+                {% for err in value %}
+                <li id="messages">{{ err }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+
+    </form>
+</body>
+</html>

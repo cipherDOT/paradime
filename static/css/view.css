@@ -1,0 +1,272 @@
+/* ---------- font imports --------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* --------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    background-color: #1d2b3a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+.material-symbols-rounded {
+    font-size: 2em;
+    color: #00cfd4;
+    border-radius: 100vh;
+    padding: 0.5em;
+    margin: 0.3em;
+    margin-top: 0.2em;
+    margin-left: 1em;
+    transition: 200ms ease;
+    float: left !important;
+}
+
+.material-symbols-rounded:hover {
+    background-color: #00cfd4;
+    color: #1d2b3a;
+}
+
+nav {
+    width: 100%;
+}
+
+.paradime {
+    display: inline;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #00cfd4;
+    float: right;
+    padding: 0em 0.2em;
+    margin: 0.5em 1.7em;
+    border-left: 1em solid #00cfd4;
+}
+
+.question-container {
+    padding: 1.5em;
+    margin: 1.3em;
+    width: 50%;
+    background: #172839;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.title {
+    font-size: 2em;
+    color: #00cfd4;
+    margin: 1em 0.5em;
+    margin-left: 0px;
+}
+
+.content {
+    font-size: 1em;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    margin-bottom: 2em;
+}
+
+.InputBox {
+    position: relative;
+    width: 100%;
+}
+
+.InputBox input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    background-color: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #ddd;
+    font-size: 1em;
+}
+
+.InputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    color: rgb(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.InputBox input[type="text"]:valid ~ span,
+.InputBox input[type="text"]:focus ~ span {
+    color: #00cfd4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #1d2b3a;
+    border-left: 1px solid #00cfd4;
+    border-right: 1px solid #00cfd4;
+    letter-spacing: 0.2em;
+}
+
+.InputBox input[type="text"]:valid,
+.InputBox input[type="text"]:focus {
+    border: 1px solid #00cfd4;
+}
+
+.container input[type="submit"] {
+    background-color: #1d2b3a;
+    color: #00cfd4;
+    border: none;
+    margin-left: auto;
+    font-size: 1.5em;
+    transition: 0.5s ease;
+    padding: 0.2em 0.5em;
+    border-radius: 50vh;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #00cfd4;
+    color: #1d2b3a;
+}
+
+/* answer box */
+.answerbox{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 0.7em;
+    background-color: #172839;
+    width: 50%;
+    margin-bottom: 2em;
+}
+
+
+.answerobj {
+    margin: 0.5em 0.5em 0.5em 2em;
+    padding: 0.5em;
+    border-left: 3px solid #00cfd4;
+    transition: 0.5s;
+}
+
+
+.answer {
+    transition: 0.5s ease;
+}
+
+.username {
+    color: #037577;
+}
+
+.answer-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.answer-link:hover {
+    color: #00cfd4;
+}
+
+.delete {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #e22238;
+    background: linear-gradient(90deg, #e22238, #e22238);
+    background-size: 0%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    float: right;
+    transition: 200ms ease;
+    padding: 0.2em;
+}
+
+.update {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #037577;
+    background: linear-gradient(90deg, #037577, #037577);
+    background-size: 0%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    float: right;
+    transition: 200ms ease;
+    padding: 0.2em;
+}
+
+.confirm:hover {
+    color: #fff;
+    background-size: 100%;
+}
+
+.confirm {
+    padding: 0.2em 0.8em;
+    margin: 0em 0.3em;
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.material-symbols-outlined {
+    color: #00cfd4;
+    border-radius: 100vh;
+    padding: 0.5em;
+    margin: 0.3em;
+    margin-left: 1em;
+    transition: 200ms ease;
+    float: left;
+}
+
+.material-symbols-outlined:hover {
+    background-color: #00cfd4;
+    color: #1d2b3a;
+}
+
+nav {
+    width: 100%;
+}
+
+.logout-tag {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    float: right; 
+}
+
+@media only screen and (max-width: 946px) {
+    .question-container {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .answerbox {
+        width: 90%;
+    }
+}
