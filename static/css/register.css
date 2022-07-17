@@ -155,6 +155,20 @@ body {
     color: #e22238;
 }
 
+::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1d2b3a;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00cfd4;
+    border-radius: 100vw;
+}
+
 @media only screen and (max-width: 946px) {
     .form-container {
         width: 90%;
