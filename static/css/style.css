@@ -160,6 +160,8 @@ nav {
 
 .username {
     color: #037577;
+    display: inline;
+    font-weight: 999;
 }
 
 .question-link {
@@ -212,6 +214,14 @@ nav {
     color: #fff;
     font-size: 1.5em;
     float: left !important; 
+}
+
+.admin {
+    display: inline-block;
+    background-color: #88C0D0;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 100vh;
 }
 
 ::-webkit-scrollbar {

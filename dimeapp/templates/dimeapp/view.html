@@ -24,6 +24,13 @@
     
         
         <div class="question-container">
+            <p class="question-username">@{{question.user}}</p>
+
+            <!-- Ego boost code -->
+            {% if question.user.username == "Kavin" %}
+            <div class="admin"></div>
+            {% endif %}
+            <!--  -->
             <h1 class="title">{{question.heading}}</h1>
             <p class="content">{{question.body}}</p>    
         </div>
@@ -48,6 +55,9 @@
                 <div class="username">
                     @{{ answer.user }}
                 </div>
+                {% if answer.user.username == "Kavin" %}
+                <div class="admin"></div>
+                {% endif %}
                 <div>
 
                     {% if request.user == answer.user %}

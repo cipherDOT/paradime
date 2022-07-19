@@ -48,7 +48,11 @@
             <div class="username">
                 @{{ question.user }}
             </div>
-
+            <!-- Ego boost code -->
+            {% if question.user.username == "Kavin" %}
+            <div class="admin"></div>
+            {% endif %}
+            <!--  -->
             <div>
 
                 <!-- Checking if the request user and the question's user are the same -->

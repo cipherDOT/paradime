@@ -74,6 +74,7 @@ nav {
     color: #00cfd4;
     margin: 1em 0.5em;
     margin-left: 0px;
+    margin-top: 0;
 }
 
 .content {
@@ -173,8 +174,19 @@ nav {
     transition: 0.5s ease;
 }
 
+.question-username,
 .username {
     color: #037577;
+    font-weight: 999;
+    display: inline;
+}
+
+.admin {
+    display: inline-block;
+    background-color: #88C0D0;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 100vh;
 }
 
 .answer-link {
