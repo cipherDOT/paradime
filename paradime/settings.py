@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-255i0mypbpspqz238=&tm34&7-+8)7ejmihu($z540zhqdt)ce
 # DEBUG = False
 DEBUG = True
 
-ALLOWED_HOSTS = ['paradime.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['paradime.herokuapp.com', 'paradime.up.railway.app', '127.0.0.1']
 
 
 # Application definition
