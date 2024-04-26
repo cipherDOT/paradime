@@ -29,12 +29,13 @@ SECRET_KEY = 'django-insecure-255i0mypbpspqz238=&tm34&7-+8)7ejmihu($z540zhqdt)ce
 # DEBUG = False
 DEBUG = True
 
-ALLOWED_HOSTS = ['paradime.herokuapp.com', 'paradime.up.railway.app', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://paradime.up.railway.app','127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+CSRF_TRUSTED_ORIGINS = ['https://paradime.up.railway.app','http://127.0.0.1']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
